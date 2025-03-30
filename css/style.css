@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari, dan Opera */
+}
+
+body{
+    font-family:"Poppins", sans-serif ;
+}
+
+h1, h2, h3{
+    color: grey;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+span{
+    color: rgb(118, 132, 172);
+}
+
+/* navbar */
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 7px;
+    transition: all.3s;
+    z-index: 99;
+}
+
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+.logo1{
+    overflow: hidden;
+    display: none;
+}
+
+.logo{
+    padding:1rem 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: .2rem;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: rgba(15, 15, 58, 0.815);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+}
+
+    
+nav ul {
+    justify-content: right;
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+    }
+    
+nav ul li {
+   margin-right: 1rem;
+}
+    
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    display: block;
+    font-weight: 400;
+    }
+    
+nav ul li a:hover { 
+    color: rgb(118, 132, 172);
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 6px;
+    transition: .4s all ease-in-out;
+    }
+
+
+/* bagian beranda */
+#beranda {
+    position: relative;
+    background: url(/img/fotbar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+}
+    
+#beranda::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+    }
+    
+header {
+    position: relative;
+    z-index: 3; /* Lebih tinggi dari overlay */
+}
+    
+
+.judul{
+    margin-top: 5.5rem;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    color:rgba(255, 255, 255, 0.904);
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+.judul p{
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    font-weight: 200;
+}

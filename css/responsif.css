@@ -1,0 +1,151 @@
+@media screen and (max-width:450px)  {
+
+.judul{
+    font-size: 1.5rem;
+}
+
+.judul p{
+    font-size: 1rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-top: .2rem;
+    font-weight: 200;
+}
+
+.main-container{
+        width: 100%;
+        margin: 0 auto;
+  }
+  
+.burger{
+    display: block;
+    cursor: pointer;
+    top: 4.2%;
+    transform: translateY(-50%);
+}
+
+.burger div{
+    background-color: white;
+}
+
+
+.toogle-burger .line-1{
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.toogle-burger .line-2{
+    opacity: 0;
+}
+
+.toogle-burger .line-3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.bg .logo1{
+    background-color: rgba(9, 9, 75, 0.767);
+    display: flex;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    width: 50%;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgba(19, 20, 78, 0.226);
+    z-index: 9;
+    transform: translateX(150%);
+    transition: .4s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+nav ul{
+    height: 100%;
+    margin-left: 2rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul li a{
+    color: white;
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+
+:root{
+    --sectionPadding: 4rem 0;
+}
+
+.logo1{
+    text-align: left;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo{
+    margin-top: 3rem;
+}
+
+/* isi beranda */
+    #isi-beranda{
+        padding: 1.5rem 1.5rem;
+    }
+
+    .judul-isi{
+        text-transform: uppercase;
+        text-align: left;
+        text-decoration: underline;
+        text-decoration-thickness:1px ;
+        text-underline-offset: 6px;
+        color: grey;
+    }
+
+    .judul-isi h1{
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.753);
+    }
+
+    .judul-isi1{
+        text-transform: uppercase;
+        margin-top: .3rem;
+    }
+
+    .judul-isi1 h2{
+        color: rgba(0, 0, 0, 0.753);
+        font-size: 15px;
+    }
+
+    .konten{
+        margin-top: 1rem;
+    }
+
+    .konten h2{
+        color: rgba(0, 0, 0, 0.753);
+        font-size: 13px;
+        text-align: justify;
+    }
+
+
+    /* footer */
+    footer{
+        background-color: rgba(128, 128, 128, 0.219);
+    }
+
+    footer h1{
+        text-align: center;
+        padding: .8rem .8rem;
+        color: black;
+        font-size: .8rem;
+    }
+  
+}
