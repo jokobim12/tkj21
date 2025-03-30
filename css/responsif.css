@@ -142,13 +142,18 @@ nav ul li a{
     /* footer */
     footer{
         background-color: rgba(128, 128, 128, 0.219);
+        padding: .8rem .8rem;
+        color: rgba(0, 0, 0, 0.411);
     }
 
     footer h1{
         text-align: center;
-        padding: .8rem .8rem;
-        color: black;
-        font-size: .8rem;
+        font-size: .7rem;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: .7rem;
     }
   
 }
