@@ -96,6 +96,28 @@ nav ul li a{
     margin-top: 3rem;
 }
 
+#beranda {
+    position: relative;
+    background: url(/img/fotbar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+}
+    
+#beranda::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+    }
+
 /* isi beranda */
     #isi-beranda{
         padding: 1.5rem 1.5rem;

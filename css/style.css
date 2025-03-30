@@ -96,7 +96,7 @@ nav ul li a:hover {
 /* bagian beranda */
 #beranda {
     position: relative;
-    background: url(/img/fotbar.jpg);
+    background: url("../img/fotbar.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
