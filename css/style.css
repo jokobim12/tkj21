@@ -169,13 +169,14 @@ header {
 }
 
 .judul-isi1 h2{
-    text-align: center;
+    text-align: left;
     color: rgba(0, 0, 0, 0.753);
     font-size: 15px;
+    font-weight: 500;
 }
 
 .konten{
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .konten h2{
@@ -183,6 +184,75 @@ header {
     font-size: 13px;
     text-align: justify;
 }
+
+/* perjalanan */
+
+.judul-perjalanan{
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-thickness:1px ;
+    text-underline-offset: 6px;
+    color: rgb(0, 0, 0);
+}
+
+.judul-perjalanan h1{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.perjalanan{
+    background-color: grey;
+    padding: 1.5rem 1.5rem;
+}
+
+.isi-perjalanan{
+    margin-top: 1rem;
+}
+
+details {
+    margin-bottom: 10px;
+    border: 1px solid #030303a1;
+    padding: 10px;
+    border-radius: 5px;
+    background: #e4e4e4;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.795);
+  }
+  
+  summary::before {
+    content: "▸ ";
+    font-size: 14px;
+    transition: transform 1s ease;
+  }
+  
+  details[open] summary::before {
+    content: "▾ ";
+  }
+
+  details p{
+    font-size: 13px;
+    text-align: justify; 
+    padding: .5rem 1rem;
+  }
+  
+  details > p {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1s ease-out, opacity 1s ease-out;
+  }
+  
+  details[open] > p {
+    max-height: 100px; /* Sesuaikan dengan tinggi konten */
+    opacity: 1;
+  }
 
 /* footer */
 footer{

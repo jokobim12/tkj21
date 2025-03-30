@@ -1,96 +1,62 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Burger</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            overflow-x: hidden;
-        }
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .menu-icon {
-            font-size: 24px;
-            cursor: pointer;
-        }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            right: -250px;
-            width: 250px;
-            height: 100vh;
-            background: white;
-            box-shadow: -4px 0px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            padding-top: 60px;
-            transition: right 0.4s ease-in-out;
-        }
-        .sidebar.active {
-            right: 0;
-        }
-        .sidebar a {
-            text-decoration: none;
-            color: black;
-            padding: 15px;
-            font-size: 18px;
-            display: block;
-            transition: background 0.3s;
-        }
-        .sidebar a:hover {
-            background: #f0f0f0;
-        }
-        .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 24px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Document</title>
 </head>
-<body>
-    <div class="navbar">
-        <div class="logo">J&C</div>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    </div>
-    <div class="sidebar" id="sidebar">
-        <div class="close-btn" onclick="toggleMenu()">&times;</div>
-        <a href="#">Beranda</a>
-        <a href="#">Tentang Kami</a>
-        <a href="#">Galeri</a>
-        <a href="#">Sosmed</a>
-        <a href="#">Kontak</a>
-    </div>
+<style>
+details {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
 
-    <script>
-        function toggleMenu() {
-            const sidebar = document.getElementById("sidebar");
-            const menuIcon = document.querySelector(".menu-icon");
-            sidebar.classList.toggle("active");
-        }
-    </script>
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  padding: 10px;
+}
+
+summary::before {
+  content: "▶ ";
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+  content: "▼ ";
+}
+
+details > p {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+}
+
+details[open] > p {
+  max-height: 100px; /* Sesuaikan dengan tinggi konten */
+  opacity: 1;
+}
+
+
+
+
+
+</style
+<body>
+    <details>
+  <summary>Judul Informasi 1</summary>
+  <p>Ini adalah isi dari informasi 1 yang akan muncul saat diklik.</p>
+</details>
+
+<details>
+  <summary>Judul Informasi 2</summary>
+  <p>Isi informasi 2 akan muncul ketika diklik.</p>
+</details>
 </body>
 </html>

@@ -44,7 +44,7 @@
 }
 
 .bg .logo1{
-    background-color: rgba(9, 9, 75, 0.767);
+    background-color: rgba(58, 58, 126, 0.767);
     display: flex;
     backdrop-filter: blur(2px);
     position: fixed;
@@ -120,16 +120,17 @@ nav ul li a{
 
     .judul-isi1{
         text-transform: uppercase;
-        margin-top: .3rem;
+        margin-top: .5rem;
     }
 
     .judul-isi1 h2{
+        text-align: left;
         color: rgba(0, 0, 0, 0.753);
         font-size: 15px;
     }
 
     .konten{
-        margin-top: 1rem;
+        margin-top: .5rem;
     }
 
     .konten h2{
