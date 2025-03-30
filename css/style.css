@@ -4,6 +4,10 @@
     list-style: none;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     display: none; /* Untuk Chrome, Safari, dan Opera */
 }
@@ -138,4 +142,61 @@ header {
     font-size: 1.5rem;
     letter-spacing: 0;
     font-weight: 200;
+}
+
+/* isi beranda */
+#isi-beranda{
+    padding: 1.5rem 1.5rem;
+}
+
+.judul-isi{
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-thickness:1px ;
+    text-underline-offset: 6px;
+    color: grey;
+}
+
+.judul-isi h1{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.judul-isi1{
+    text-transform: uppercase;
+    margin-top: .3rem;
+}
+
+.judul-isi1 h2{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 15px;
+}
+
+.konten{
+    margin-top: 1rem;
+}
+
+.konten h2{
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* footer */
+footer{
+background-color: rgba(128, 128, 128, 0.219);
+padding: .8rem .8rem;
+color: rgba(0, 0, 0, 0.411);
+}
+
+footer h1{
+text-align: center;
+font-size: .7rem;
+}
+
+footer p{
+text-align: center;
+font-size: .7rem;
 }
