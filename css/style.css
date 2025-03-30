@@ -195,7 +195,7 @@ header {
 
 .judul-perjalanan h1{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.753);
 }
 
@@ -217,7 +217,7 @@ details {
   }
   
   summary {
-    font-weight: bold;
+    font-weight: 500;
     cursor: pointer;
     list-style: none;
     padding: 10px;
