@@ -22,7 +22,8 @@
     cursor: pointer;
     top: 4.2%;
     transform: translateY(-50%);
-    padding-bottom: 1rem;
+    padding-bottom: .9rem;
+    position: fixed;
 }
 
 .burger div{
@@ -70,7 +71,7 @@ nav ul{
     margin-left: 2rem;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 3.5rem;
 }
 
 nav ul li a{
