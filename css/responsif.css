@@ -44,7 +44,7 @@
 }
 
 .bg .logo1{
-    background-color: rgba(58, 58, 126, 0.767);
+    background-color: #0e4e92bd;
     display: flex;
     backdrop-filter: blur(2px);
     position: fixed;
