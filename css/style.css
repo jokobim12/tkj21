@@ -23,7 +23,7 @@ h1, h2, h3{
 }
 
 span{
-    color: rgb(118, 132, 172);
+    color:yellow;
 }
 
 /* navbar */
@@ -89,7 +89,7 @@ nav ul li a {
     }
     
 nav ul li a:hover { 
-    color: rgb(118, 132, 172);
+    color:yellow;
     text-decoration: underline;
     text-decoration-thickness: 2px; 
     text-underline-offset: 6px;
@@ -271,9 +271,71 @@ details {
 }
 
 .judul-konten h1{
+    padding-top: 1.5rem;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     color: rgba(0, 0, 0, 0.74);
+}
+
+.galer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    max-width: 30vh;
+    margin: 1rem .7rem;
+    /* background-color: rgb(163, 163, 163); */
+}
+
+.galeri-img{
+    width: 200px;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    display: block;
+}
+
+.galeri-img:hover img{
+    transform: scale(1.2);
+}
+
+.galeri-img .kata{
+    position: absolute;
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.432);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all ease-in-out;
+}
+
+.galeri-img:hover .kata{
+    opacity: 0;
+}
+
+.galeri-img .kata p{
+    font-size: 1rem;
+    color: white;
+}
+.galeri-img img{    
+    width: 100%;
+    aspect-ratio: 3/4;
+    transition: .5s ease-in-out;
+    object-fit: cover;
+
+}
+
+.foto{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    height: auto;
+    padding: 2rem 2rem;
 }
 
 /* footer */
