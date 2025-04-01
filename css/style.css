@@ -194,7 +194,7 @@ header {
 }
 
 .judul-perjalanan h1{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.753);
 }
@@ -217,7 +217,7 @@ details {
   }
   
   summary {
-    font-weight: 500;
+    font-weight: 450;
     cursor: pointer;
     list-style: none;
     padding: 10px;
@@ -257,6 +257,8 @@ details {
 #alumni{
     /* position: relative; */
     overflow: hidden;
+    background-color: rgb(226, 197, 133);
+    height: 100vh;
 }
 
 .konten-semua{
@@ -270,72 +272,63 @@ details {
     z-index: 2;
 }
 
-.judul-konten h1{
-    padding-top: 1.5rem;
-    font-weight: 500;
-    font-size: 30px;
+.judul-konten h1, h2{
+    padding: 0 .2rem;
+    font-weight: 600;
+    font-size: 25px;
     color: rgba(0, 0, 0, 0.74);
 }
 
-.galer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 40vh;
-    max-width: 30vh;
-    margin: 1rem .7rem;
-    /* background-color: rgb(163, 163, 163); */
+.gambar{
+    margin-top: 1rem;
+    padding: 0 1rem;
 }
-
-.galeri-img{
-    width: 200px;
-    aspect-ratio: 3/4;
-    overflow: hidden;
-    position: relative;
-    max-width: 100%;
-    display: block;
-}
-
-.galeri-img:hover img{
-    transform: scale(1.2);
-}
-
-.galeri-img .kata{
-    position: absolute;
-    z-index: 1;
-    background-color:rgba(0, 0, 0, 0.432);
-    width: 100%;
+.gambar img{
+    filter: grayscale(20%);
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .3s all ease-in-out;
-}
-
-.galeri-img:hover .kata{
-    opacity: 0;
-}
-
-.galeri-img .kata p{
-    font-size: 1rem;
-    color: white;
-}
-.galeri-img img{    
     width: 100%;
-    aspect-ratio: 3/4;
-    transition: .5s ease-in-out;
-    object-fit: cover;
-
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
 }
 
-.foto{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    height: auto;
-    padding: 2rem 2rem;
+.nama {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    max-width: 375px;
+  }
+  
+  .nama-kiri, .nama-kanan, .nama-tengah {
+    width: 45%; /* Supaya tidak terlalu melebar */
+  }
+  
+  .ul {
+    list-style-type: none; /* Menghilangkan default bullet */
+    padding-left: 0;
+    
+  }
+  
+  .li {
+    position: relative;
+    padding-left: 15px;
+    font-size: 7px;
+  }
+  
+  .li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+  }
+
+  .wali{
+    margin-top: 1rem;
+  }
+.wali h3, p{
+    padding-left: 1rem;
+    font-size: 7px;
+    color: black;
+    text-align: center;
 }
 
 /* footer */
@@ -343,14 +336,14 @@ footer{
 background-color: rgba(128, 128, 128, 0.219);
 padding: .8rem .8rem;
 color: rgba(0, 0, 0, 0.411);
+text-align: center;
 }
 
 footer h1{
-text-align: center;
 font-size: .7rem;
 }
 
 footer p{
-text-align: center;
 font-size: .7rem;
+color: rgba(0, 0, 0, 0.411);
 }
