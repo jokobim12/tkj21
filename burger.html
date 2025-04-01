@@ -1,62 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-details {
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
-  background: #f9f9f9;
-}
+<section id="kontak">
+  <!-- <h1 class="section-title title-kontak" >Bisa tinggalkan pesan</h1> -->
+  <div class="kontak main-container">
+      <div class="kontak-left">
+          <form class="kontak-form" action="https://formspree.io/f/xqapaply" method="POST">
+              <div>
+                  <input type="text" placeholder="Nama" name="name">
+              </div>
+              <div>
+                  <input type="email" placeholder="Email" name="email">
+              </div>
+              <div>
+                  <textarea name="messege" placeholder="Pesan" cols="30" rows="10"></textarea>
+              </div>
+              <div><button class="btn-submit">Kirim Pesan</button></div>
+          </form>
+      </div>
+          </div>
+      </div>
+  </div>
+ </section>
 
-summary {
-  font-weight: bold;
-  cursor: pointer;
-  list-style: none;
-  padding: 10px;
-}
-
-summary::before {
-  content: "▶ ";
-  font-size: 14px;
-  transition: transform 0.3s ease;
-}
-
-details[open] summary::before {
-  content: "▼ ";
-}
-
-details > p {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
-}
-
-details[open] > p {
-  max-height: 100px; /* Sesuaikan dengan tinggi konten */
-  opacity: 1;
-}
-
-
-
-
-
-</style
-<body>
-    <details>
-  <summary>Judul Informasi 1</summary>
-  <p>Ini adalah isi dari informasi 1 yang akan muncul saat diklik.</p>
-</details>
-
-<details>
-  <summary>Judul Informasi 2</summary>
-  <p>Isi informasi 2 akan muncul ketika diklik.</p>
-</details>
-</body>
-</html>
+  <footer>
+  <h1>©2025 - Joko Bimantaro</h1>
+  <p>build with HTML CSS and JavaScript</p> 
+</footer>
+  <!-- Kontak selesai -->
