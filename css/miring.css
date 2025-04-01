@@ -50,6 +50,56 @@
         text-align: justify;
     }
 
+    .nama {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        width: 90%;
+        padding-left: 3.2rem;
+      }
+      
+      .nama-kiri, .nama-kanan, .nama-tengah {
+        width: 45%; /* Supaya tidak terlalu melebar */
+      }
+      
+      .ul {
+        list-style-type: none; /* Menghilangkan default bullet */
+        padding-left: 0;
+        
+      }
+      
+      .li {
+        position: relative;
+        padding-left: 15px;
+        font-size:13px;
+      }
+      
+      .li::before {
+        content: "-";
+        position: absolute;
+        left: 0;
+      }
+    
+      .wali{
+        padding: 4rem 2rem;
+      }
+    .wali h3{
+        padding-left: 1rem;
+        font-size: 7px;
+        color: black;
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .wali p {
+        padding-left: 1rem;
+        font-size: 7px;
+        color: black;
+        text-align: center;
+        font-size: 13px;
+    }
+
    /* footer */
    footer{
     background-color: rgba(128, 128, 128, 0.219);
