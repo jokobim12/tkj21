@@ -172,10 +172,8 @@ nav ul li a{
     .nama {
         display: flex;
         justify-content: space-between;
-        width: 100%;
         padding: 0 1rem;
-        max-width: 375px;
-        margin-top: 0;
+        max-width: 360px;
       }
       
       .nama-kiri, .nama-kanan, .nama-tengah {
