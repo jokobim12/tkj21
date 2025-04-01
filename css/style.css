@@ -485,6 +485,12 @@ details {
     background-color: rgb(255, 255, 255);
 }
 
+.gambarini img{
+    margin-top: 6rem;
+    height: 700px;
+    margin-left: 26rem;
+    margin-bottom: 1rem;
+}
 
 /* footer */
 footer{
