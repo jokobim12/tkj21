@@ -139,6 +139,13 @@ nav ul li a{
         text-align: justify;
     }
 
+    #alumni{
+        /* position: relative; */
+        overflow: hidden;
+        background-color: rgb(226, 197, 133);
+        height: 100vh;
+    }
+    
     .konten-semua{
         margin-top: 5.5rem;
         text-align: center;
@@ -170,6 +177,7 @@ nav ul li a{
     }
     
     .nama {
+        margin-top: .5rem;
         display: flex;
         justify-content: space-between;
         padding: 0 1rem;
