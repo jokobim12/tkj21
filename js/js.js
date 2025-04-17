@@ -1,3 +1,5 @@
+alert("Selamat datang di website kami")
+
 // navbar
 const navSlide = () =>{
     const burger = document.querySelector(".burger")
