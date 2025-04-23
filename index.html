@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsif.css">
     <link rel="stylesheet" href="css/miring.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="img/tkj.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
@@ -14,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="beranda">
+    <section id="beranda" >
         <header>
            <div class="main-container">
        <!-- Navbar -->
@@ -52,13 +53,13 @@
 <section id="isi-beranda">
     <!-- tentang kami -->
     <div class="judul-isi">
-        <h1>Tentang kami</h1>
+        <h1 data-aos="fade-right">Tentang kami</h1>
     </div>
     <div class="judul-isi1">
-        <h2>─ Selamat datang di website resmi tkj smkn 1 takisung</h2>
+        <h2 data-aos="fade-right">─ Selamat datang di website resmi tkj smkn 1 takisung</h2>
     </div>
 
-    <div class="konten">
+    <div class="konten" data-aos="fade-right">
         <h2>
             <p style="text-indent: 30px; margin-top: 5px;">Kami adalah alumni SMKN 1 Takisung, jurusan Teknik Komputer dan Jaringan (TKJ), yang memulai perjalanan kami pada tahun 2021 dan mengakhirinya pada tahun 2024. Selama tiga tahun ini, kami telah belajar, bertumbuh, dan berkembang bersama, menghadapi berbagai tantangan, serta menciptakan momen-momen berharga yang akan selalu kami kenang.</p>
             <p style="text-indent: 30px; margin-top: 5px;">Di sini, kami tidak hanya belajar tentang teknologi jaringan, pemrograman, dan sistem komputer, tetapi juga memahami arti kerja keras, persahabatan, dan kebersamaan. Setiap hari di sekolah adalah bagian dari perjalanan yang membentuk siapa kami hari ini dari momen penuh tawa saat belajar bersama, proyek yang menguras tenaga dan pikiran, hingga kebersamaan dalam menghadapi ujian dan tantangan.</p>
@@ -73,12 +74,12 @@
 
 <!-- perjalanan -->
 <div class="perjalanan">        
-    <div class="judul-perjalanan">
+    <div class="judul-perjalanan" data-aos="fade-right">
         <h1 style="color: white;">─ Sedikit kisah perjalanan  kami</h1>
        </div>
        
 <div class="isi-perjalanan">
-<details>
+<details  data-aos="zoom-in">
    <summary>2021: Awal Cerita</summary>
    <p>
     Tahun 2021 menjadi awal perjalanan kami di SMKN 1 Takisung, 
@@ -94,7 +95,7 @@
    </p>
  </details>
  
- <details>
+ <details  data-aos="zoom-in">
    <summary>2022: Seperti Semula</summary>
    <p>
     Tahun ini, keadaan mulai berubah. Pembelajaran tatap muka
@@ -110,7 +111,7 @@
     </p>
  </details>
 
- <details>
+ <details  data-aos="zoom-in">
    <summary>2023: Pengalaman Baru</summary>
    <p>
     Semester dua di kelas 11 menjadi awal dari pengalaman baru bagi
@@ -130,7 +131,7 @@
    </p>
  </details>
 
- <details>
+ <details  data-aos="zoom-in">
    <summary>2024: Akhir Cerita</summary>
    <p>
     Tahun terakhir menjadi babak penutup dari perjalanan yang penuh makna. Sebelum menghadapi ujian praktikum, kami berkesempatan untuk berjalan-jalan bersama para guru. Perjalanan ini diawali dengan ziarah, momen yang penuh doa dan harapan, kemudian diakhiri dengan kegiatan rekreasi yang membawa tawa dan kebersamaan, mengingat waktu di sekolah semakin terasa singkat.
@@ -150,5 +151,9 @@
 </footer>
 
 <script src="js/js.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

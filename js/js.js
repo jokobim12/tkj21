@@ -1,4 +1,3 @@
-alert("Selamat datang di website kami")
 
 // navbar
 const navSlide = () =>{
