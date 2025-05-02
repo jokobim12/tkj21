@@ -463,7 +463,7 @@ details {
 }
 
 .btn-submit{
-    width: 1105px;
+    width: 93.6%;
     padding: .75rem 1.4rem;
     background-color: #0e4e92bd;
     color: white;
@@ -483,7 +483,9 @@ details {
     /* position: relative; */
     overflow: hidden;
     background-color: rgb(255, 255, 255);
+    height: 100vh;
 }
+
 
 .gambarini img{
     margin-top: 6rem;
