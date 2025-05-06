@@ -100,7 +100,7 @@ nav ul li a:hover {
 /* bagian beranda */
 #beranda {
     position: relative;
-    background-image: url(/img/fotbar-min.jpg);
+    background-image:url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
