@@ -51,7 +51,7 @@
     width: 100%;
 }
 
-nav{
+.navi{
     position: fixed;
     display: flex;
     width: 50%;
@@ -66,7 +66,7 @@ nav{
     backdrop-filter: blur(10px);
 }
 
-nav ul{
+.navi ul{
     height: 100%;
     margin-left: 2rem;
     align-items: center;
@@ -74,7 +74,7 @@ nav ul{
     margin-top: 3.5rem;
 }
 
-nav ul li a{
+.navi ul li a{
     color: white;
 }
 
@@ -143,7 +143,7 @@ nav ul li a{
         /* position: relative; */
         overflow: hidden;
         background-color: rgb(226, 197, 133);
-        height: 100vh;
+        /* height: 100vh; */
     }
     
     .konten-semua{
@@ -223,75 +223,21 @@ nav ul li a{
         text-align: center;
     }
 
+
     .quote{
         font-size: 6px;
-        text-align: center;
+        text-align: justify;
         padding: 0 2rem;
         margin-bottom: 2rem;
         font-style: italic;
         font-weight: 250;
     }
 
-    .galer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 10vh;
-        padding: .3rem 0;
-        max-width: 20vh;
-    }
-    
-    .galeri-img{
-        width: 85px;
-        aspect-ratio: 3/4;
-        overflow: hidden;
-        position: relative;
-        max-width: 100%;
-        display: block;
-    }
-    
-    .galeri-img:hover img{
-        transform: scale(1.2);
-    }
-    
-    .galeri-img .kata{
-        position: absolute;
-        z-index: 1;
-        background-color:rgba(0, 0, 0, 0.432);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: .3s all ease-in-out;
-    }
-    
-    .galeri-img:hover .kata{
-        opacity: 0;
-    }
-    
-    .galeri-img .kata p{
-        font-size: .5rem;
-        color: white;
-    }
-    .galeri-img img{    
-        width: 100%;
-        aspect-ratio: 3/4;
-        transition: .5s ease-in-out;
-        object-fit: cover;
-    }
-    
-    .foto{
-        padding: 1rem 1rem;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        align-items: center;
-        justify-content: center;
-        border-radius: 2px;
-        height: auto;
-        margin-top: 1rem;
-    }
-
+ /* galeri */
+.text-center{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
     /* kontak */
     #kontak{
         /* position: relative; */
@@ -357,27 +303,26 @@ nav ul li a{
     #lainnya{
         /* position: relative; */
         overflow: hidden;
-        background-color: rgb(255, 255, 255);
     }
 
-    .gambarini img{
-    margin-top: 5rem;
-       height: 600px;
-       margin-left: 1.6rem;
-       margin-bottom: 1rem;
-    }
+  .j-lainnya{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .btn-danger{
+    margin-left: 1rem;
+  }
 
     /* footer */
     footer{
         background-color: rgba(128, 128, 128, 0.219);
-        padding: .8rem .8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         color: rgba(0, 0, 0, 0.411);
-    }
-
-    footer h1{
-        text-align: center;
-        font-size: .7rem;
-        margin-left: 20px;
     }
 
     footer p{
