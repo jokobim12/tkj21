@@ -4,5 +4,5 @@
 <li>Untuk menyimpan foto</li>
 <li>Agar komunikasi tetap berjalan baik</li>
 <li>Untuk masa depan</li>
-### Link Website 
-[https://tkjsmkntakisung.kesug.com/index.html]
+## Link Website 
+(https://tkjsmkntakisung.kesug.com/index.html)
